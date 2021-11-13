@@ -5,3 +5,4 @@ This project is to create a web page that used the OpenWeather API to show weath
 
 https://github.com/ddcrane/weather-dashboard
 
+<img src='./style/screenshot.png'>
