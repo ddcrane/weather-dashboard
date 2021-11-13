@@ -51,7 +51,7 @@ function renderCurrentWeather(city, weather, timezone) {
   var windMph = weather.wind_speed;
   var humidity = weather.humidity;
   var uvi = weather.uvi;
-  // var iconUrl = `https://openweathermap.org/img/w/${weather.weather[0].icon}.png`;
+  var iconUrl = `https://openweathermap.org/img/w/${weather.weather[0].icon}.png`;
   var iconDescription = weather.weather[0].description || weather[0].main;
 
   var card = document.createElement('div');
@@ -104,7 +104,7 @@ function renderCurrentWeather(city, weather, timezone) {
 
 function renderForecastCard(forecast, timezone) {
   var unixTs = forecast.dt;
-  // var iconUrl = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
+   var iconUrl = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
   var iconDescription = forecast.weather[0].description;
   var tempF = forecast.temp.day;
   var { humidity } = forecast;
